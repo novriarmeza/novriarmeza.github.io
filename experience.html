@@ -1,0 +1,337 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Experience — Linovri Armeza Pratama</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.min.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
+<style>
+/* ── LOGO STRIP (large logos next to company name) ────── */
+.tl-logo-wrap {
+  display: flex; align-items: center; gap: .85rem; margin-bottom: .9rem;
+}
+.company-logo-box {
+  width: 56px; height: 56px; border-radius: 12px; overflow: hidden;
+  border: 1px solid var(--border); flex-shrink: 0;
+  background: #fff; box-shadow: var(--shadow);
+  display: flex; align-items: center; justify-content: center;
+}
+.company-logo-box img {
+  width: 100%; height: 100%; object-fit: contain; padding: 7px; display: block;
+}
+.company-logo-box .logo-init {
+  font-family: 'Space Grotesk', sans-serif; font-size: .82rem; font-weight: 800;
+  letter-spacing: -.5px; color: var(--blue);
+  background: linear-gradient(135deg, rgba(29,78,216,.08), rgba(2,132,199,.1));
+  width: 100%; height: 100%; display: none; align-items: center; justify-content: center;
+  border-radius: 11px;
+}
+
+/* Large logo banner inside card */
+.company-banner {
+  display: flex; align-items: center; gap: 14px;
+  padding: 14px 16px 14px;
+  background: var(--bg); border-radius: 10px; margin-bottom: 14px;
+  border: 1px solid var(--border);
+}
+.banner-logo {
+  width: 52px; height: 52px; flex-shrink: 0; border-radius: 10px; overflow: hidden;
+  background: #fff; border: 1px solid var(--border); box-shadow: 0 1px 6px rgba(15,30,74,.07);
+  display: flex; align-items: center; justify-content: center;
+}
+.banner-logo img { width: 100%; height: 100%; object-fit: contain; padding: 6px; display: block; }
+.banner-logo .logo-init {
+  font-family: 'Space Grotesk', sans-serif; font-size: .82rem; font-weight: 800;
+  letter-spacing: -.3px; color: var(--blue); width: 100%; height: 100%;
+  display: none; align-items: center; justify-content: center;
+  background: linear-gradient(135deg, rgba(29,78,216,.08), rgba(2,132,199,.1));
+}
+.banner-info { display: flex; flex-direction: column; gap: 1px; }
+.banner-co { font-family: 'Space Grotesk', sans-serif; font-size: 1rem; font-weight: 700; color: var(--navy); }
+.banner-role { color: var(--blue); font-size: .82rem; font-weight: 600; }
+.banner-period { color: var(--gray2); font-size: .7rem; margin-top: 1px; }
+</style>
+</head>
+<body>
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+<div id="scroll-progress"></div>
+
+<nav id="navbar">
+  <a href="index.html" class="nav-logo">Linovri Armeza</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="experience.html">Experience</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="skills.html">Skills</a></li>
+  </ul>
+  <a href="https://linkedin.com/in/linovri-armeza" target="_blank" class="nav-linkedin">LinkedIn ↗</a>
+  <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="experience.html">Experience</a>
+  <a href="projects.html">Projects</a>
+  <a href="skills.html">Skills</a>
+</div>
+
+<div class="page-body">
+
+  <div class="page-hero" data-num="03">
+    <div class="section-tag">Career Journey</div>
+    <h1>Professional Experience</h1>
+    <p>10+ years across management consulting, e-commerce, manufacturing, and technology — from Astra to Lazada to NRI.</p>
+  </div>
+
+  <section class="section">
+
+    <!-- CAREER STATS -->
+    <div class="career-stats" data-aos="fade-up">
+      <div class="career-stat">
+        <div class="cs-num">10+</div>
+        <div class="cs-lbl">Years Experience</div>
+      </div>
+      <div class="career-stat">
+        <div class="cs-num">5</div>
+        <div class="cs-lbl">Companies</div>
+      </div>
+      <div class="career-stat">
+        <div class="cs-num">$3M+</div>
+        <div class="cs-lbl">Cost Savings</div>
+      </div>
+      <div class="career-stat">
+        <div class="cs-num">5</div>
+        <div class="cs-lbl">Industries</div>
+      </div>
+    </div>
+
+    <div class="timeline">
+
+      <!-- ── NRI ─────────────────────────────────────────────── -->
+      <div class="tl-item" data-aos="fade-up" data-aos-delay="0">
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+
+          <div class="company-banner">
+            <div class="banner-logo">
+              <!--
+                Logo order: Clearbit → Google S2 Favicons → styled initials
+                If clearbit fails → tries google favicon → if that fails → shows NRI initials
+              -->
+              <img id="logo-nri"
+                   src="pic/nri.png"
+                   alt="NRI"
+                   onerror="this.src='https://www.google.com/s2/favicons?domain=nri.co.jp&sz=128';this.onerror=function(){this.style.display='none';this.nextElementSibling.style.display='flex'}"/>
+              <div class="logo-init">NRI</div>
+            </div>
+            <div class="banner-info">
+              <div class="banner-co">Nomura Research Institute (NRI)<span class="tl-current">&#9679; Current</span></div>
+              <div class="banner-role">Senior Digital Transformation Consultant</div>
+              <div class="banner-period">May 2024 – Present &nbsp;·&nbsp; Jakarta, Indonesia</div>
+            </div>
+          </div>
+
+          <div class="tl-desc">
+            <ul>
+              <li>Lead multiple digital transformation and business improvement initiatives across automotive and FMCG industries, partnering with executive stakeholders to drive operational excellence and technology-enabled business growth.</li>
+              <li>Led SCM digitalization programs for FMCG clients covering manufacturing, Order Management System (OMS), integrated planning, and National Operational Dashboard — driving real-time supply chain visibility.</li>
+              <li>Developed digital customer engagement platform (automotive sector) connecting principal, dealer, and end customers — enabling self-service, paperless operations, and real-time service tracking.</li>
+              <li>Led Solutions sub-department driving enterprise-wide innovation, GenAI adoption initiatives, and future-state business process design.</li>
+              <li>Conducted management consulting for automotive telematics client — cost optimization, process pain point identification, new business model design, and automation roadmap.</li>
+            </ul>
+          </div>
+          <div class="tl-tags">
+            <span class="tl-tag">Digital Transformation</span>
+            <span class="tl-tag">SCM Digitalization</span>
+            <span class="tl-tag">GenAI</span>
+            <span class="tl-tag">Automotive</span>
+            <span class="tl-tag">FMCG</span>
+            <span class="tl-tag">OMS</span>
+            <span class="tl-tag">Consulting</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── LAZADA ──────────────────────────────────────────── -->
+      <div class="tl-item" data-aos="fade-up" data-aos-delay="60">
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+
+          <div class="company-banner">
+            <div class="banner-logo">
+              <img src="pic/lazada.png"
+                   alt="Lazada"
+                   onerror="this.src='https://www.google.com/s2/favicons?domain=lazada.com&sz=128';this.onerror=function(){this.style.display='none';this.nextElementSibling.style.display='flex'}"/>
+              <div class="logo-init">LZD</div>
+            </div>
+            <div class="banner-info">
+              <div class="banner-co">Lazada Logistics — Alibaba Group</div>
+              <div class="banner-role">Manager, Operational System &amp; Continuous Improvement</div>
+              <div class="banner-period">May 2022 – May 2024 &nbsp;·&nbsp; Indonesia (Nationwide)</div>
+            </div>
+          </div>
+
+          <div class="tl-desc">
+            <ul>
+              <li>Directed nationwide transformation delivering <strong style="color:#047857">$3M+ annualized cost savings</strong> through 12+ CI initiatives: process redesign, material optimization, run wave strategy, kitting, AWB label redesign, damage reduction, and capacity improvements.</li>
+              <li>Owned warehouse performance governance, including SLA management, operational KPIs, capacity planning, and fulfillment readiness across multiple warehouses and peak-season campaigns.</li>
+              <li>Directed continuous improvement programs by identifying operational bottlenecks, eliminating process waste, and implementing scalable solutions to improve productivity, service quality, and cost efficiency.</li>
+              <li>Led automation and warehouse digitalization initiatives, including process redesign, system enhancements, workflow automation, and Warehouse Management System (WMS) optimization.</li>
+              <li>Established executive dashboards, business intelligence solutions, and performance monitoring frameworks that improved operational visibility and enabled data-driven decision-making at a national level.</li>
+              <li>Managed cross-functional collaboration across Fulfillment, Sortation, Linehaul, and 3PL stakeholders to optimize end-to-end supply chain performance and operational flow.</li>
+              <li>Partnered with regional and local leadership teams to implement new services, define operational metrics, manage project risks, and ensure successful execution of strategic initiatives.</li>
+              <li>Leveraged technology and analytics capabilities, including SQL, Python, BI platforms, and custom application development, to automate manual processes, improve operational visibility, and accelerate data-driven decision-making across fulfillment operations</li>
+              <li>Managed national campaign operations: capacity planning, 3PL coordination, cross-functional alignment ensuring peak-period readiness.</li>
+            </ul>
+          </div>
+          <div class="tl-tags">
+            <span class="tl-tag">Operational Excellence</span>
+            <span class="tl-tag">$3M+ Savings</span>
+            <span class="tl-tag">RPA / Python</span>
+            <span class="tl-tag">BI Dashboards</span>
+            <span class="tl-tag">Supply Chain</span>
+            <span class="tl-tag">AI Forecasting</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── ARCSTONE ────────────────────────────────────────── -->
+      <div class="tl-item" data-aos="fade-up" data-aos-delay="60">
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+
+          <div class="company-banner">
+            <div class="banner-logo">
+              <img src="pic/arcstone.png"
+                   alt="Arcstone"
+                   onerror="this.src='https://www.google.com/s2/favicons?domain=arcstone.co&sz=128';this.onerror=function(){this.style.display='none';this.nextElementSibling.style.display='flex'}"/>
+              <div class="logo-init">ARC</div>
+            </div>
+            <div class="banner-info">
+              <div class="banner-co">Arcstone Pte. Ltd.</div>
+              <div class="banner-role">Manufacturing Deployment &amp; Digitalization Consultant</div>
+              <div class="banner-period">Oct 2021 – May 2022 &nbsp;·&nbsp; Indonesia / Southeast Asia</div>
+            </div>
+          </div>
+
+          <div class="tl-desc">
+            <ul>
+              <li>Supported manufacturing digitalization projects and Industry 4.0 implementation initiatives across client manufacturing environments.</li>
+              <li>Assisted in deployment of Manufacturing Execution System (MES) solutions and operational digitalization programs.</li>
+              <li>Collaborated with stakeholders to improve manufacturing visibility, operational efficiency, and data-driven decision-making.</li>
+              <li>Contributed to supply chain and manufacturing transformation projects aimed at improving sustainability, resilience, and operational performance.</li>
+            </ul>
+          </div>
+          <div class="tl-tags">
+            <span class="tl-tag">MES</span>
+            <span class="tl-tag">ERP Integration</span>
+            <span class="tl-tag">Manufacturing</span>
+            <span class="tl-tag">Southeast Asia</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── PT ASTRA KOMPONEN INDONESIA (ASKI) ─────────────── -->
+      <div class="tl-item" data-aos="fade-up" data-aos-delay="60">
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+
+          <div class="company-banner">
+            <div class="banner-logo">
+              <!--
+                ASKI is a subsidiary of Astra Otoparts.
+                Trying astra.co.id (parent group) → google favicon → initials
+              -->
+              <img src="pic/aski.png"
+                   alt="Astra Komponen"
+                   onerror="this.src='https://logo.clearbit.com/astra.co.id';this.onerror=function(){this.src='https://www.google.com/s2/favicons?domain=astra.co.id&sz=128';this.onerror=function(){this.style.display='none';this.nextElementSibling.style.display='flex'}}"/>
+              <div class="logo-init">ASKI</div>
+            </div>
+            <div class="banner-info">
+              <div class="banner-co">PT Astra Komponen Indonesia (ASKI)</div>
+              <div class="banner-role">Digital Transformation Engineer → QA Officer</div>
+              <div class="banner-period">Sep 2018 – Oct 2021 &nbsp;·&nbsp; Citeureup, Bogor</div>
+            </div>
+          </div>
+
+          <div class="tl-desc">
+            <ul>
+              <li>Designed and deployed full Industry 4.0 ecosystem — AGV robotics, Andon systems, SAP auto-GR/GI, QR traceability, supplier portal — generating <strong style="color:#047857">$100K+ annual savings</strong>.</li>
+              <li>Led digital transformation initiatives supporting Industry 4.0 adoption and smart manufacturing implementation</li>
+              <li>Built digital architecture, data management frameworks, and system integration strategies to support manufacturing excellence.</li>
+              <li>Developed web, desktop, and mobile applications to improve operational visibility, productivity, and process control.</li>
+              <li>Established methodologies and governance frameworks supporting Lean Manufacturing, Continuous Improvement, and Industry 4.0 implementation.</li>
+              <li>Identified operational challenges and delivered technology-enabled solutions that accelerated manufacturing digitalization efforts.</li>
+              <li>Managed application lifecycle activities including system enhancement, maintenance, and continuous improvement.</li>
+            </ul>
+          </div>
+          <div class="tl-tags">
+            <span class="tl-tag">Industry 4.0</span>
+            <span class="tl-tag">IoT</span>
+            <span class="tl-tag">SAP</span>
+            <span class="tl-tag">AGV Robotics</span>
+            <span class="tl-tag">Smart Factory</span>
+            <span class="tl-tag">$100K+ Savings</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── ALCON ───────────────────────────────────────────── -->
+      <div class="tl-item" data-aos="fade-up" data-aos-delay="60">
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+
+          <div class="company-banner">
+            <div class="banner-logo">
+              <img src="pic/alcon.png"
+                   alt="Alcon"
+                   onerror="this.src='https://www.google.com/s2/favicons?domain=alcon.com&sz=128';this.onerror=function(){this.style.display='none';this.nextElementSibling.style.display='flex'}"/>
+              <div class="logo-init">ALC</div>
+            </div>
+            <div class="banner-info">
+              <div class="banner-co">Alcon — Novartis Division</div>
+              <div class="banner-role">Quality Assurance Engineer</div>
+              <div class="banner-period">Mar 2017 – Sep 2018 &nbsp;·&nbsp; Batam, Indonesia</div>
+            </div>
+          </div>
+
+          <div class="tl-desc">
+            <ul>
+              <li>Managed cGMP compliance programs, internal quality audits, and external audit support (FDA, BSI, MDSAP).</li>
+              <li>Led Lean Six Sigma Green Belt improvement projects delivering process standardization and measurable cost savings.</li>
+            </ul>
+          </div>
+          <div class="tl-tags">
+            <span class="tl-tag">Lean Six Sigma</span>
+            <span class="tl-tag">Quality Assurance</span>
+            <span class="tl-tag">cGMP</span>
+            <span class="tl-tag">FDA Compliance</span>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /timeline -->
+  </section>
+
+  <section class="section section-alt">
+    <div style="display:flex;gap:1rem;flex-wrap:wrap" data-aos="fade-up">
+      <a href="projects.html" class="btn-primary">See Key Projects →</a>
+      <a href="skills.html" class="btn-ghost">View Skills →</a>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <p>© 2026 Linovri Armeza Pratama &nbsp;·&nbsp; Senior Digital Transformation Consultant &nbsp;·&nbsp; Jakarta, Indonesia</p>
+</footer>
+<button id="btt">↑</button>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
